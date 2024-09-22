@@ -1,0 +1,33 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#draggable-list {
+    list-style: none;
+    padding: 0;
+    width: 300px;
+}
+
+.draggable-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: move;
+}
+
+.draggable-item.dragging {
+    opacity: 0.5;
+}
+
+.draggable-item.over {
+    border: 2px dashed #000;
+}
